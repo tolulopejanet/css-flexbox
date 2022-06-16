@@ -47,7 +47,6 @@ button{
     padding: 1em 2em;
     border: 2px solid hsl(0, 0%, 95%);
     border-radius: 50px;
-    /* font-weight: bold; */
     font-family: 'Lexend Deca', sans-serif;
 }
 .left button{
@@ -60,6 +59,74 @@ button{
     color: hsl(179, 100%, 13%);
 }
 button:hover{
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.container{
+    margin-top: 50px;
+    background-color: hsl(0, 0%, 95%);
+    place-items: center;
+    min-height: 100vh;
+    display: flex;
+}
+.subcontainer{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'a b c';
+    /* gap: 10px; */
+}
+.subcontainer{
+    color: #fff;
+    padding: 2em;
+    text-align: left;
+    width: 100%;
+}
+.subcontainer h1{
+    font-family: 'Big Shoulders Display', cursive;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: hsl(0, 0%, 95%);
+}
+.subcontainer p.content{
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 2.5em;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 2em;
+}
+.subcontainer .left{
+    background-color: yellowgreen;
+    grid-area: a;
+}
+.subcontainer .middle{
+    background-color: goldenrod;
+    grid-area: b;
+}
+.subcontainer .right{
+    background-color: brown;
+    grid-area: c;
+}
+.subcontainer button{
+    background-color: hsl(0, 0%, 95%);
+    padding: 1em 2em;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.subcontainer .left button{
+    color: yellowgreen;
+}
+.subcontainer .middle button{
+    color: goldenrod;
+}
+.subcontainer .right button{
+    color: brown;
+}
+.subcontainer button:hover{
     background-color: transparent;
     color: hsla(0, 0%, 100%, 0.75);
 }
